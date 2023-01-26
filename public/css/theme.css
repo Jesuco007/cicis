@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans:wght@300&family=Secular+One&display=swap');
+
+:root {
+    --clr-light: #ffffff;
+    --clr-dark: #492a49;
+
+    --foreground: var(--clr-dark);
+    --background: var(--clr-light);
+
+    --ff-body: 'Open Sans', sans-serif;
+    --ffsize: 16px;
+}
+
+.darkmode {
+    --clr-light: #ffffff;
+    --clr-dark: #331e33;
+
+    --foreground: var(--clr-light);
+    --background: var(--clr-dark);
+}
+
+
+.lightmode-young {
+    --clr-light: #5282aa;
+    --clr-dark: #23385e;
+
+    --foreground: var(--clr-dark);
+    --background: var(--clr-light);
+
+    --ffsize: 12pt !important;
+    --ff-body: 'Lora', serif;
+}
+
+.darkmode-young {
+    --clr-light: #5282aa;
+    --clr-dark: #23385e;
+
+    --foreground: var(--clr-light);
+    --background: var(--clr-dark);
+
+    --ffsize: 12pt !important;
+    --ff-body: 'Lora', serif;
+}
+
+.lightmode-child {
+    --clr-light: #efccf8;
+    --clr-dark: #db610f;
+    
+    --foreground: var(--clr-dark);
+    --background: var(--clr-light);
+
+    --ffsize: 14pt;
+    --ff-body: 'Secular One', sans-serif;
+}
+
+.darkmode-child {
+    --clr-light: #f0d1ed;
+    --clr-dark: #db610f;
+
+    --foreground: var(--clr-light);
+    --background: var(--clr-dark);
+
+    --ffsize: 14pt;
+    --ff-body: 'Secular One', sans-serif;
+}
+
+body {
+    font-size: var(--ffsize) !important;
+    background-color: var(--background) !important;
+    color: var(--foreground) !important;
+    font-family: var(--ff-body) !important;
+}
+table {
+    font-size: var(--ffsize) !important;
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--ff-body);
+}
+table>thead{
+    text-transform: uppercase;
+}
+
+input {
+    font-size: var(--ffsize) !important;
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--ff-body);
+}
+
+
+.title {
+    font-size: 22pt;
+    margin-bottom: 5em !important;
+    text-transform: uppercase;
+}
+
+.dark-primary-color {
+    background-color: var(--clr-dark);
+}
+
+
+/* MOFICACION A MATERIALIZE */
+
+/* label color */
+.input-field label {
+    color: var(--foreground);   
+}
+
+/* label focus color */
+.input-field input[type=text]:focus+label {
+    color: #000;
+}
+
+.card {
+    background-color: var(--background) !important;
+}
+
+.btn {
+    background-color: var(--foreground) !important;
+    color: var(--background) !important;
+}
+
+.dropdown-content > li > a {
+    background-color: var(--background) !important;
+    color: var(--foreground) !important;
+}
